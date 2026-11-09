@@ -1,0 +1,32 @@
+# Clojure
+.cpcache/
+.clj-kondo/
+.lsp/
+target/
+classes/
+
+# Node.js
+node_modules/
+
+# Shadow-CLJS
+.shadow-cljs/
+public/js/compiled/
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.iml

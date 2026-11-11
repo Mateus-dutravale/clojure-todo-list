@@ -14,7 +14,10 @@
    app-routes
    (ring/create-default-handler)))
 
-(defn -main [& args]
+(defn start-server [port]
+  (println (str "Servidor iniciado na porta " port))
+  (jetty/run-jetty #'app {:port port :join? false}))
+
+(defn -main [& args].
   (let [port (Integer/parseInt (or (first args) "3000"))]
-    (jetty/run-jetty #'app {:port port :join? false})
-    (println (str "Servidor iniciado na porta " port))))
+    (start-server port)))

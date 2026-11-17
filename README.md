@@ -1,6 +1,6 @@
 # Todo List — Clojure/ClojureScript
 
-> 🎥 **Vídeo de Apresentação:** [Assistir à demonstração e explicação da arquitetura](COLE_O_LINK_DO_VIDEO_AQUI)
+> 🎥 **Vídeo de Apresentação:** [Assistir à demonstração e explicação da arquitetura](https://drive.google.com/drive/u/1/folders/1GGtm0kptp7wcMYBHQShBbfvNtA0m_MYX)
 
 **Integrantes da Dupla:**
 - Emerson Paulo Pinheiro Muniz

@@ -20,13 +20,24 @@ Aplicação full-stack de lista de tarefas (Todo List), construída de forma inc
 
 ---
 
-## Pré-requisitos
+## Pré-requisitos e versões
 
-| Ferramenta | Versão mínima |
+Para reproduzir o ambiente do tutorial, use as versões abaixo. O `shadow-cljs` deve ter a mesma versão no npm e no `deps.edn`.
+
+| Ferramenta / Biblioteca | Versão |
 | :--- | :--- |
-| Java (JDK) | 11+ |
-| [Clojure CLI](https://clojure.org/guides/install_clojure) (`clj`) | 1.11+ |
-| Node.js (`node` / `npm`) | 18+ |
+| Java (JDK) | 11 ou superior (17 ou 21 recomendado) |
+| [Clojure CLI](https://clojure.org/guides/install_clojure) (`clj` / `clojure`) | 1.11+ |
+| Node.js (`node` / `npm`) | 18 ou superior |
+| **`shadow-cljs`** (npm e `deps.edn`) | **`2.28.23`** |
+| `reagent/reagent` | `2.0.0` |
+| `react` / `react-dom` (npm) | `19.2.0` |
+| `ring/ring-core` / `ring/ring-jetty-adapter` | `1.12.2` |
+| `metosin/reitit-ring` | `0.7.0` |
+| `ring/ring-json` | `0.5.1` |
+| `ring-cors/ring-cors` | `0.1.13` |
+| `seancorfield/next.jdbc` | `1.2.659` |
+| `org.xerial/sqlite-jdbc` | `3.45.3.0` |
 
 ---
 
@@ -35,9 +46,9 @@ Aplicação full-stack de lista de tarefas (Todo List), construída de forma inc
 ### 1. Clonar o repositório e instalar as dependências do frontend
 
 ```bash
-git clone [https://github.com/Mateus-dutravale/clojure-todo-list.git](https://github.com/Mateus-dutravale/clojure-todo-list.git)
+git clone https://github.com/Mateus-dutravale/clojure-todo-list.git
 cd clojure-todo-list
-npm install
+npm ci
 ```
 
 ### 2. Iniciar os dois servidores simultaneamente
